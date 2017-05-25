@@ -6,6 +6,6 @@ Rails.application.routes.draw do
     get '/academic', to: 'static_pages#academic'
     get '/help', to: 'static_pages#help'
     get '/tricom', to: 'static_pages#tricom'
-    get '/trisoftware', to: 'static_pages#trisoftwawre'
+    get '/trisoftware', to: 'static_pages#trisoftware'
     get '/administration', to: 'static_pages#administration'
 end
