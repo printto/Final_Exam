@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
-
-get 'static_pages/home'
-
-get 'static_pages/help'
-
-root 'application#hello'
-
+    root 'static_pages#home'
+    get '/help', to: 'static_pages#help'
+    get '/tuition', to: 'static_pages#tuition'
+    get '/contactus', to: 'static_pages#contact'
+    get '/academic', to: 'static_pages#academic'
 end
