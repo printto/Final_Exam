@@ -1,2 +1,42 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<h1>Home</h1>
+<body>
+<img src ="http://www.admissionpremium.com/uploads/contents/20161121155228.jpg" alt="ku engineer pic" style="width: 720px; height: 480px;">
+
+<h2 class="w3-center">News</h2>
+<p>“KuAcar” คว้าอันดับ2 การแข่งขันรถจำลองไร้คนขับ AMAS MBD 2016</p>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="https://www.cpe.ku.ac.th/wp-content/gallery/kuacar/16837886_10154867331038046_691987547_n.jpg" style="width:480px ; height: 400px;">
+  <img class="mySlides" src="https://www.cpe.ku.ac.th/wp-content/gallery/kuacar/16923594_10154867331058046_2127900613_n.jpg" style="width:480px ; height: 400px;">
+  <img class="mySlides" src="https://www.cpe.ku.ac.th/wp-content/gallery/kuacar/16838027_10154867331053046_1348097201_n.jpg" style="width:480px ; height: 400px;">
+  <img class="mySlides" src="https://www.cpe.ku.ac.th/wp-content/gallery/kuacar/16810571_10154867331123046_735667844_o.jpg" style="width:480px ; height: 400px;">
+</div>
+
+<p>“KuAcar” คว้าอันดับ2 การแข่งขัน AMAS MBD 2016 วันที่19 กุมภาพันธ์ 2560 ณ สำนักงานนวัตกรรมแห่งชาติ
+
+การแข่งขัน AMAS MBD 2016 เป็นการแข่งขันรถจำลองไร้คนขับ โดยสั่งงานผ่านระบบซอฟต์แวร์ระบบสมองกลฝังตัวไปยังรถจำลอง (Embedded Software) ที่ใช้การพัฒนาแบบ Model Based Development ซึ่งเป็นเทคโนโลยีที่ใช้ในการพัฒนาซอฟต์แวร์ในรถยนต์ในปัจจุบัน และอนาคต โครงการนี้ได้จัดขึ้นเป็นครั้งแรกของประเทศไทย โดยแต่ละทีมมีเวลาในการพัฒนาซอฟต์แวร์ระบบสมองกลฝังตัว ใส่ความคิดสร้างสรรค์ และทดสอบระบบดังกล่าวกัน 1 ภาคการศึกษา สมาชิกทีม KuAcar ประกอบด้วย
+
+นาย ศุภกฤษฏิ์ เกรียงขจร 
+นาย วสุธร ศิริยากร
+นาย ณัฐชนันท์ ทองเต็ม
+
+มีผศ.ดร. ยอดเยี่ยม ทิพย์สุวรรณ เป็นอาจารย์ที่ปรึกษา โดยทั้งหมดเป็นนิสิตชั้นปีที่ 2 สาขาวิศวกรรมคอมพิวเตอร์</p>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+</script>
+
+
+</body>
