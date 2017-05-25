@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Homepage</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+   <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 
 <body>
@@ -47,7 +50,11 @@
                 <li> <a href="#">Tuition Fee</a>
                 </li>
                 <li> <a href="#">Contact us</a>
-
+                </li>
+                <li>
+                    <form>
+                        <input type="text"  name="search" placeholder="Search..">
+                    </form>
                 </li>
             </ul>
         </div>
