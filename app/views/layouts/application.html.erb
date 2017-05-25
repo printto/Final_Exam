@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CpewebApp</title>
-    <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
 
-  <body>
+<body>
+    <img src="https://www.cpe.ku.ac.th/wp-content/uploads/2014/08/logo_blue2-1.jpg">
+    <div id="nav">
+        <div id="nav_wrapper">
+            <ul>
+                <li><a href="#">Home</a>
+                </li>
+                <li> <a href="#">Academic</a>
+                    <ul>
+                        <li><a href="#">Degree Programs</a>
+                        </li>
+                        <li><a href="#">Course Offerings</a>
+                        </li>
+                        <li><a href="#">Certificate Programs (Excutive EA)</a>
+                        </li>
+                    </ul>
+                </li>
+                <li> <a href="#">Administration</a>
+
+                    <ul>
+                        <li><a href="#">Department Heads</a>
+                        </li>
+                        <li><a href="#">Seniors & Executive Members</a>
+                        </li>
+                        <li><a href="#">Staffs</a>
+                        </li>
+                    </ul>
+                </li>
+                <li> <a href="#">Admissions</a>
+
+                    <ul>
+                        <li><a href="#">How To Apply</a>
+                        </li>
+                        <li><a href="#">Statistical Data</a>
+                        </li>
+                    </ul>
+                </li>
+                <li> <a href="#">Tuition Fee</a>
+                </li>
+                <li> <a href="#">Contact us</a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
     <%= yield %>
-  </body>
+</body>
+
 </html>
