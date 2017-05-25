@@ -67,6 +67,30 @@ input[type=text]:focus {
     width: 100%;
 }
 
+
 .iconset {
     text-align: right
+}
+
+p {
+  font : "Arial";
+  padding-left: 20px;
+}
+
+li {
+  font : "Arial";
+}
+
+.name {
+  padding-left: 50px;
+}
+
+h2,h3 {
+  text-align: center;
+  font-size: 25px;
+}
+
+div {
+  padding-left: 50;
+ 
 }
